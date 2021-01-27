@@ -30,7 +30,7 @@ xdescribe("BAD - Login form", function () {
     driver.findElement(By.css('[ng-model="ctrl.email"]')).sendKeys('w@w.w');
     driver.findElement(By.css('[ng-model="ctrl.password"]')).sendKeys('w');
     (await driver.findElement(By.css('[type="button"]'))).click()
-    await driver.sleep(1000);
+    await driver.sleep(500);
 
     (await driver.findElement(By.css('md-tab-item:nth-child(2)'))).click();
     await driver.sleep(500);
